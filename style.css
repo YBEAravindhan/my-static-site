@@ -162,7 +162,7 @@
     --color-bg-6: rgba(194, 65, 12, 0.15); /* Dark orange */
     --color-bg-7: rgba(190, 24, 93, 0.15); /* Dark pink */
     --color-bg-8: rgba(8, 145, 178, 0.15); /* Dark cyan */
-    
+
     /* Semantic Color Tokens (Dark Mode) */
     --color-background: var(--color-charcoal-700);
     --color-surface: var(--color-charcoal-800);
@@ -222,7 +222,7 @@
   --color-bg-6: rgba(194, 65, 12, 0.15); /* Dark orange */
   --color-bg-7: rgba(190, 24, 93, 0.15); /* Dark pink */
   --color-bg-8: rgba(8, 145, 178, 0.15); /* Dark cyan */
-  
+
   /* Semantic Color Tokens (Dark Mode) */
   --color-background: var(--color-charcoal-700);
   --color-surface: var(--color-charcoal-800);
@@ -268,7 +268,7 @@
   --color-brown-600-rgb: 94, 82, 64;
   --color-teal-500-rgb: 33, 128, 141;
   --color-slate-900-rgb: 19, 52, 59;
-  
+
   /* Semantic Color Tokens (Light Mode) */
   --color-background: var(--color-cream-50);
   --color-surface: var(--color-cream-100);
@@ -732,9 +732,9 @@ select.form-control {
 }
 
 @font-face {
-  font-family: 'FKGroteskNeue';
-  src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2')
-    format('woff2');
+  font-family: "FKGroteskNeue";
+  src: url("https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2")
+    format("woff2");
 }
 
 /* END PERPLEXITY DESIGN SYSTEM */
@@ -747,8 +747,16 @@ select.form-control {
   --color-blue-500: #3b82f6;
   --color-orange-500: #f97316;
   --color-orange-600: #ea580c;
-  --gradient-hero: linear-gradient(135deg, var(--color-navy-900) 0%, var(--color-navy-800) 100%);
-  --gradient-section: linear-gradient(180deg, var(--color-navy-800) 0%, var(--color-navy-700) 100%);
+  --gradient-hero: linear-gradient(
+    135deg,
+    var(--color-navy-900) 0%,
+    var(--color-navy-800) 100%
+  );
+  --gradient-section: linear-gradient(
+    180deg,
+    var(--color-navy-800) 0%,
+    var(--color-navy-700) 100%
+  );
 }
 
 /* Override design system for landing page theme */
@@ -797,25 +805,26 @@ body {
 .nav-cta:hover {
   background: var(--color-orange-600);
 }
-  .hero { 
-           
-           background: var(--gradient-hero);
-           padding: 180px 0 80px;
-           text-align: center;
-           position: relative;
-           overflow: hidden; 
-           
-       }
-       
+.hero {
+  background: var(--gradient-hero);
+  padding: 180px 0 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse at center, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(59, 130, 246, 0.1) 0%,
+    transparent 70%
+  );
   pointer-events: none;
 }
 
@@ -1307,36 +1316,36 @@ body {
   .hero {
     padding: 100px 0 60px;
   }
-  
+
   .hero-title {
     font-size: 2.5rem;
   }
-  
+
   .outcomes-grid {
     grid-template-columns: 1fr;
     gap: var(--space-24);
   }
-  
+
   .proof-content {
     grid-template-columns: 1fr;
     gap: var(--space-24);
   }
-  
+
   .adapt-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-16);
   }
-  
+
   .delivery-grid {
     grid-template-columns: 1fr;
     gap: var(--space-24);
   }
-  
+
   .cta-grid {
     grid-template-columns: 1fr;
     gap: var(--space-24);
   }
-  
+
   .footer-content {
     grid-template-columns: 1fr;
     text-align: center;
@@ -1348,7 +1357,7 @@ body {
   .adapt-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .logos-grid {
     grid-template-columns: 1fr;
   }
