@@ -800,7 +800,6 @@ body {
   .hero { 
            
            background: var(--gradient-hero);
-          margin-top: 90px;
            padding: 180px 0 80px;
            text-align: center;
            position: relative;
