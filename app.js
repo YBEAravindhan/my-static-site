@@ -72,7 +72,7 @@ function initFAQ() {
                 item.classList.add('active');
                 const scrollHeight = answer.scrollHeight;
                 answer.style.maxHeight = scrollHeight + 'px';
-                answer.style.padding = '0 20px 100px 20px';
+                answer.style.padding = '0 20px 20px 20px';
                 icon.style.transform = 'rotate(45deg)';
                 
                 // After transition, set to auto for better responsiveness
