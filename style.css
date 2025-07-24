@@ -633,7 +633,7 @@ select.form-control {
 }
 @media (min-width: 1280px) {
   .container {
-    max-width: var(--con  tainer-xl);
+    max-width: var(--container-xl);
   }
 }
 
@@ -798,14 +798,14 @@ body {
   background: var(--color-orange-600);
 }
 
-/* Hero Section */
-.hero {
-  background: var(--gradient-hero);
-  padding: 120px 0 80px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
+/*.hero {*/
+/*  background: var(--gradient-hero);*/
+/*  padding: 120px 0 80px;*/
+/*  text-align: center;*/
+/*  position: relative;*/
+/*  overflow: hidden;*/
+  
+/*}*/
 
 .hero::before {
   content: '';
