@@ -1354,3 +1354,8 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+.logoDesign {
+  width: 150px;
+  height: 60px;
+}
