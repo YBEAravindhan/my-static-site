@@ -797,7 +797,7 @@ body {
 .nav-cta:hover {
   background: var(--color-orange-600);
 }
-  /* .hero { 
+  .hero { 
            
            background: var(--gradient-hero);
            padding: 180px 0 80px;
@@ -806,7 +806,7 @@ body {
            overflow: hidden; 
            
        }
-        */
+       
 
 .hero::before {
   content: '';
