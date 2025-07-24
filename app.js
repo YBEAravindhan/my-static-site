@@ -53,7 +53,6 @@ function initFAQ() {
                 if (otherItem !== item && otherItem.classList.contains('active')) {
                     const otherAnswer = otherItem.querySelector('.faq-answer');
                     const otherIcon = otherItem.querySelector('.faq-icon');
-                    
                     otherItem.classList.remove('active');
                     otherAnswer.style.maxHeight = '0px';
                     otherAnswer.style.padding = '0 20px';
@@ -73,7 +72,7 @@ function initFAQ() {
                 item.classList.add('active');
                 const scrollHeight = answer.scrollHeight;
                 answer.style.maxHeight = scrollHeight + 'px';
-                answer.style.padding = '0 20px 20px 20px';
+                answer.style.padding = '0 20px 100px 20px';
                 icon.style.transform = 'rotate(45deg)';
                 
                 // After transition, set to auto for better responsiveness
@@ -114,7 +113,7 @@ function initCTAButtons() {
                 this.style.transform = 'translateY(-2px)';
             }
         });
-        
+
         button.addEventListener('mouseleave', function() {
             if (!this.disabled) {
                 this.style.transform = 'translateY(0)';
@@ -125,7 +124,7 @@ function initCTAButtons() {
 
 // Handle demo request
 function handleDemoRequest(button) {
-    const originalText = button.textContent;
+    const originalText = button.textContent;    
     const originalBg = button.style.background || getComputedStyle(button).backgroundColor;
     
     button.textContent = 'Scheduling...';
@@ -242,7 +241,7 @@ function showNotification(message, type = 'info') {
     `;
     
     const closeBtn = notification.querySelector('.notification-close');
-    closeBtn.style.cssText = `
+    closeBtn.style.cssText = `      
         background: none;
         border: none;
         color: white;
@@ -371,5 +370,5 @@ function debounce(func, wait) {
 
 // Performance optimization: debounce scroll events
 const debouncedScroll = debounce(() => {
-    // Any scroll-heavy operations can go here
+    
 }, 10);
