@@ -15,7 +15,7 @@
   --color-teal-300: rgba(50, 184, 198, 1);
   --color-teal-400: rgba(45, 166, 178, 1);
   --color-teal-500: rgba(33, 128, 141, 1);
-  --color-teal-600: rgba(29, 116, 128, 1);
+  --color-teal-600: rgba(29, 116, 128, 1);  
   --color-teal-700: rgba(26, 104, 115, 1);
   --color-teal-800: rgba(41, 150, 161, 1);
   --color-red-400: rgba(255, 84, 89, 1);
@@ -870,6 +870,23 @@ body {
   box-shadow: 0 12px 40px rgba(249, 115, 22, 0.4);
 }
 
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 /* Why Act Now Section */
 .why-act-now {
   background: var(--color-navy-800);
@@ -1349,7 +1366,7 @@ body {
   .footer-content {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: var(--space-16);
+    gap: var(--space-16); 
   }
 }
 
