@@ -1275,7 +1275,7 @@ body {
 }
 
 .final-cta-btn:hover {
-  background: var(--color-orange-600);
+  background: var(--color-orange-600);  
   transform: translateY(-2px);
   box-shadow: 0 12px 40px rgba(249, 115, 22, 0.4);
 }
@@ -1287,11 +1287,17 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.footer-content {
+/* .footer-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-32);
   align-items: center;
+} */
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .footer-brand h3 {

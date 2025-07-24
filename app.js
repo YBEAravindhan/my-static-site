@@ -45,7 +45,7 @@ function initFAQ() {
         
         question.addEventListener('click', (e) => {
             e.preventDefault();
-            
+
             const isCurrentlyActive = item.classList.contains('active');
             
             // Close all other FAQ items first
@@ -355,20 +355,20 @@ function handleFormSubmission(form) {
     showNotification('Thank you for your submission! We\'ll be in touch soon.', 'success');
 }
 
-// Utility function for debouncing
-function debounce(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-        const later = () => {
+    // Utility function for debouncing
+    function debounce(func, wait) {
+        let timeout;
+        return function executedFunction(...args) {
+            const later = () => {
+                clearTimeout(timeout);
+                func(...args);
+            };
             clearTimeout(timeout);
-            func(...args);
+            timeout = setTimeout(later, wait);
         };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-    };
-}
+    }
 
-// Performance optimization: debounce scroll events
-const debouncedScroll = debounce(() => {
-    
-}, 10);
+    // Performance optimization: debounce scroll events
+    const debouncedScroll = debounce(() => {
+        
+    }, 10);
