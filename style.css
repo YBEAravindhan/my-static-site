@@ -1395,11 +1395,3 @@ body {
   object-fit: cover;
 }
 
-.video-background .content {
-  position: relative;
-  z-index: 1;
-  color: white;
-  text-align: center;
-  padding-top: 20%;
-}
-
