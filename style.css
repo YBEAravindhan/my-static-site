@@ -1392,3 +1392,11 @@ body {
   z-index: -1;
 }
 
+.page-content {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
