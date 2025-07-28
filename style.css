@@ -1394,12 +1394,7 @@ body {
 
 .overlay-content {
   
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
+  margin-top: 400px;
 }
 
 .overlay-content h1 {
