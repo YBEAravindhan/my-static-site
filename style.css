@@ -1398,17 +1398,23 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
 }
 
 .overlay-content h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .overlay-content p {
   font-size: 1.5rem;
   margin-bottom: 2rem;
+    text-align: center;
 }
 
 .overlay-content button {
