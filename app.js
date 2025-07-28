@@ -39,7 +39,7 @@ function initFAQ() {
         
         // Set initial state
         answer.style.maxHeight = '0px';
-        answer.style.padding = '0 20px';
+        answer.style.padding = '0 20px';    
         answer.style.overflow = 'hidden';
         answer.style.transition = 'max-height 0.3s ease, padding 0.3s ease';
         
@@ -200,7 +200,7 @@ function handleContactRequest(button) {
             button.style.background = originalBg;
             button.style.opacity = '1';
         }, 3000);
-    }, 1500);
+    }, 1500);   
 }
 
 // Show notification
@@ -361,7 +361,7 @@ function handleFormSubmission(form) {
         return function executedFunction(...args) {
             const later = () => {
                 clearTimeout(timeout);
-                func(...args);
+                func(...args);  
             };
             clearTimeout(timeout);
             timeout = setTimeout(later, wait);
