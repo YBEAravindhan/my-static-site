@@ -1399,6 +1399,7 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 100;
-  margin-top: 100px;
+  position: absolute;
+  top: 500px;
   
 }
