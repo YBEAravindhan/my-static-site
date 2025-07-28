@@ -1409,12 +1409,14 @@ body {
   font-size: 3rem;
   margin-bottom: 1rem;
   text-align: center;
+  z-index: 100;
 }
 
 .overlay-content p {
   font-size: 1.5rem;
   margin-bottom: 2rem;
     text-align: center;
+    z-index: 100;
 }
 
 .overlay-content button {
@@ -1425,6 +1427,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s ease;
+  z-index: 100;
 }
 
 .overlay-content button:hover {
